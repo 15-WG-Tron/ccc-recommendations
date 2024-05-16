@@ -30,7 +30,7 @@ function App() {
   return (
     <div>
      
-      <Typography variant='h3' sx={{marginY: 2, textAlign: 'center'}}>15 WG/CCC Recommendations</Typography>
+      <Typography variant='h3' sx={{marginY: 2, textAlign: 'center', paddingX: 1}}>15 WG/CCC Recommendations</Typography>
       <Typography variant='h4' sx={{textAlign: 'center'}}>"Success leaves clues"</Typography>
       <Typography variant='h5' sx={{textAlign: 'center', marginBottom: 3}}>- Jim Kwik</Typography>
       <Typography variant='h4' sx={{textAlign: 'center', textDecoration: 'underline'}}>Books</Typography>
