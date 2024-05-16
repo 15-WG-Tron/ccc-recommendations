@@ -14,7 +14,7 @@ const RecommedationInformation: React.FC<RecommedationProps> = ({recommadtionLis
             return (
           <Container key={item.name}>
             <Link href={item.url} underline="none" >
-              <Card sx={{margin: 2, width: 'auto'}}>
+              <Card sx={{marginY: 2, width: 'auto', padding: 2}}>
                 <CardActionArea>
 
                   <CardContent>
@@ -35,7 +35,7 @@ const RecommedationInformation: React.FC<RecommedationProps> = ({recommadtionLis
                <Container key={item.name}>
               <Link href={item.url} underline="none">
 
-            <Card sx={{margin: 2, width: 'auto'}}>
+            <Card sx={{marginY: 2, width: 'auto', padding: 2}}>
                 <CardActionArea>
 
                   <CardContent>
