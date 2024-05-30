@@ -1,5 +1,5 @@
 import { RecommendationType } from "../App";
-import {Card, CardContent, Typography, CardActionArea, Link, Container} from '@mui/material'
+import {Card, CardContent, Typography, CardActionArea, Link, Container, Foot} from '@mui/material'
 
 type RecommedationProps = {
   recommadtionList: RecommendationType[]
@@ -13,7 +13,6 @@ const RecommedationInformation: React.FC<RecommedationProps> = ({recommadtionLis
           if (item.recType === 'book') {
             return (
           <Container key={item.name}>
-            <Link href={item.url} underline="none" >
               <Card sx={{marginY: 2, width: 'auto', padding: 2}}>
                 <CardActionArea>
 
@@ -27,13 +26,11 @@ const RecommedationInformation: React.FC<RecommedationProps> = ({recommadtionLis
                   </CardContent>
                 </CardActionArea>
               </Card>
-              </Link>
           </Container>
             )
           } else {
             return (
                <Container key={item.name}>
-              <Link href={item.url} underline="none">
 
             <Card sx={{marginY: 2, width: 'auto', padding: 2}}>
                 <CardActionArea>
@@ -45,11 +42,11 @@ const RecommedationInformation: React.FC<RecommedationProps> = ({recommadtionLis
                   </CardContent>
                 </CardActionArea>
               </Card>
-            </Link>
           </Container>
             )
         }
               })}
+
       </Container>
   )
 }
