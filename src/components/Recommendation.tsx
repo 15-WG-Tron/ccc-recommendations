@@ -1,5 +1,5 @@
 import { RecommendationType } from "../App";
-import {Card, CardContent, Typography, CardActionArea, Link, Container, Foot} from '@mui/material'
+import {Card, CardContent, Typography, CardActionArea, Container} from '@mui/material'
 
 type RecommedationProps = {
   recommadtionList: RecommendationType[]
